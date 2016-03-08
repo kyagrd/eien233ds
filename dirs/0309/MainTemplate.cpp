@@ -6,10 +6,10 @@
 
 int main(void)
 {
-	printf("hello, world");
+	printf("hello world");
 
 #ifdef _MSC_VER // 윈도우즈 명령창이 닫혀서 쓰는 꼼수
-	printf("\n\nPress any key to exit ...");
+	printf("\n\nPress Enter key to exit ...");
 	getchar();
 #endif
 
