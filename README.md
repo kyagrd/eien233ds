@@ -19,6 +19,7 @@ http://kyagrd.github.io/
 프로그래밍 실습은 주로 C/C++를 활용하며
 화요일 농심관 컴퓨터실 수업에서는 컴퓨터실에 설치된 Visual Studio를 활용하고,
 노트북 등 개인 컴퓨터에서는 Visual Studio Express (무료버전)을 설치해서 사용.
+https://www.visualstudio.com/ko-kr/products/visual-studio-express-vs.aspx
 
 Mac OS X 사용자는 XCode를 이용해도 무방하며
 리눅스/유닉스 사용자는 뭘 쓰든 알아서 잘 하겠지만
