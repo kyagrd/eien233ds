@@ -4,10 +4,10 @@
 http://kyagrd.github.io/
 
 교과서는 교내 서점에서 구입 
-* 한국어판 - C로 쓴 자료구조론 - 2/E
-* 영문원서 - Fundamentals of Data Structures in C (2nd ed.)
 (3/8 기준으로 아직 서점에 들어오니 않았는데 곧 들어올 예정이라고 합니다.
 일단 3/11까지는 교과서 없이도 수업에 지장이 없도록 진행하겠습니다.)
+* 한국어판 - C로 쓴 자료구조론 - 2/E
+* 영문원서 - Fundamentals of Data Structures in C (2nd ed.)
 
 학점 평가 방침: 출석/퀴즈 25%, 과제 25%, 중간 25%, 기말 25%
 
