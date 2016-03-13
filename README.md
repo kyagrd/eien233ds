@@ -27,4 +27,4 @@ Mac OS X 사용자는 XCode를 이용해도 무방하며
 
 * [2016-03-08 수업진행 및 기본개념](https://slides.com/kyagrd/ds2016spring0308)
 * [2016-03-09 보강: C/C++ 프로그래밍 기초](https://github.com/kyagrd/eien233ds/tree/master/dirs/0309)
-* 2016-03-11 배열과 리스트 예정
+* 2016-03-11 배열과 리스트 (소스코드 업데이트 예정)
