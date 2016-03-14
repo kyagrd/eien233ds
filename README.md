@@ -25,4 +25,4 @@ Mac OS X 사용자는 XCode를 이용해도 무방하며
 
 * [2016-03-08 수업진행 및 기본개념](https://slides.com/kyagrd/ds2016spring0308) (수업시간에 다룬 [예제 소스코드](https://github.com/kyagrd/eien233ds/tree/master/dirs/0308))
 * [2016-03-09 보강: C/C++ 프로그래밍 기초](https://github.com/kyagrd/eien233ds/tree/master/dirs/0309)
-* 2016-03-11 배열과 리스트 (소스코드 업데이트 예정)
+* 2016-03-11 배열의 기본 및 리스트 맛보기 (소스코드 http://ideone.com/WhffEO , http://ideone.com/Gjy2KV  )
