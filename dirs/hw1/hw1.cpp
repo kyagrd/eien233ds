@@ -63,7 +63,7 @@ int main(void)
 	////////////////////////////////////////////////////
 
 	cout <<"mean = " <<mean <<endl;
-	cout <<"median = " <<mean <<endl;
+	cout <<"median = " <<median <<endl;
 	cout <<"mode = " <<mode <<endl;
 
 #ifdef _MSC_VER // 윈도우즈 명령창이 닫혀서 쓰는 꼼수
