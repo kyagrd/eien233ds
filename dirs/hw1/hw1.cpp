@@ -10,6 +10,7 @@
 #include <stdlib.h> // srand, rand 등
 
 #include <iostream> // cout, cin 등 C++ 표준입출력 
+#include <algorithm> // sort를 불러다 쓰려고
 using namespace std;
 
 // 처음에는 작은 N으로 시작해 나중에는 좀더 더 큰 값으로 바꿔서 시험해 볼 것
@@ -25,6 +26,11 @@ void init(int* p, int n)
 	}
 }
 
+void sort(int* p, int n) // 이건 내용은 몰라도 되고 그냥 갖다쓰면 됩니다
+{
+	std::sort(p, p+n); // 그냥 C++ 표준라이브러리 정렬함수 호출로 구현
+}
+
 int main(void)
 {
 	// 평균값은 나눗셈이 들어갈 것이므로 부동소수점 타입으로
@@ -34,7 +40,7 @@ int main(void)
 	// (예를 들어 1,2,3,4,5의 median은 3)
 	// 배열의 개수가 짝수이면 둘 중 더 큰 값으로
 	// (예를 들어 1,2,3,4 의 median은 3으로 간주)
-	int median = 0.0/0.0; // -nan 으로 초기화
+	int median = 0.0/0.0; // 가장 작인 int 값으로 초기화
 
 	// 최빈값이 하나만 있는 경우도 있지만
 	// (예를 들어 1,2,2,2,4 의 경우는 2)
@@ -45,7 +51,7 @@ int main(void)
 	int a[N];
 	init(a, N); // A를 초기화
 
-	// A값을 출력해줌
+	// 배열a에 들어있는 정수값들을 for문으로 돌려서 출력해줌
 	for (int i=0; i<N; ++i)
        	{
 	       	cout <<a[i] <<" ";
