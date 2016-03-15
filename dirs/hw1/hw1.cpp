@@ -14,7 +14,7 @@
 using namespace std;
 
 // 처음에는 작은 N으로 시작해 나중에는 좀더 더 큰 값으로 바꿔서 시험해 볼 것
-const int N = 100;
+const int N = 12;
 
 void init(int* p, int n)
 {
