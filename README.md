@@ -26,4 +26,4 @@ Mac OS X 사용자는 XCode를 이용해도 무방하며
 * [2016-03-08 수업진행 및 기본개념](https://slides.com/kyagrd/ds2016spring0308) (수업시간에 다룬 [예제 소스코드](https://github.com/kyagrd/eien233ds/tree/master/dirs/0308))
 * [2016-03-09 보강: C/C++ 프로그래밍 기초](https://github.com/kyagrd/eien233ds/tree/master/dirs/0309)
 * 2016-03-11 배열과 포인터의 기본 및 리스트 맛보기 (소스코드 http://ideone.com/WhffEO , http://ideone.com/Gjy2KV  )
-* [2016-03-15 배열, 포인터, 동적할당, 귀납적 정의, 리스트, 트리](https://slides.com/kyagrd/ds2016spring0315) (소스코드 https://github.com/kyagrd/eien233ds/tree/master/dirs/0315 )
+* [2016-03-15 배열, 포인터, 동적할당, 귀납적 정의, 리스트, 트리](https://slides.com/kyagrd/ds2016spring0315) (수업시간에 다룬 [예제 소스코드](https://github.com/kyagrd/eien233ds/tree/master/dirs/0315) )
