@@ -21,8 +21,8 @@ Mac OS X 사용자는 XCode를 이용해도 무방하며
 첫 프로그래밍 과제 제출 전에 교수와 상담.
 
 ## 과제
-* 과제1 (제출기한: 2016-03-20 월요일 밤) - 다음 프로그램을 완성하시오 [hw1.cpp](https://github.com/kyagrd/eien233ds/blob/master/dirs/hw1/hw1.cpp) 
-* 과제2 (제출기한: 2016-03-27 월요일 밤) - 다음 프로그램을 완성하시오 [hw2.cpp](https://github.com/kyagrd/eien233ds/blob/master/dirs/hw2/hw2.cpp) 
+* 과제1 (제출기한: 2016-03-21 월요일 밤) - 다음 프로그램을 완성하시오 [hw1.cpp](https://github.com/kyagrd/eien233ds/blob/master/dirs/hw1/hw1.cpp) 
+* 과제2 (제출기한: 2016-03-28 월요일 밤) - 다음 프로그램을 완성하시오 [hw2.cpp](https://github.com/kyagrd/eien233ds/blob/master/dirs/hw2/hw2.cpp) 
 
 ## 강의노트
 강의 전후로 업데이트 예정

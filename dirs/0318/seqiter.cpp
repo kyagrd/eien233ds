@@ -41,8 +41,8 @@ void init(int* p, int n)
 	}
 }
 
-// int* next(int* p) { return p+1; };
-// list* next(list* p) { return p->next; }
+int* next(int* p) { return p+1; };
+list* next(list* p) { return p->next; }
 
 int main(void)
 {
@@ -50,24 +50,24 @@ int main(void)
 	init(arr, N); // arr 초기화
 
 	{ //////////////////////////// array block begin
-	//// int* begin = arr;
-	//// int* end = arr+N;
-	//// for (int* p = begin; p != end; p = next(p))
-	for (int* p = arr; p != arr+N; ++p)
+	int* begin = arr;
+	int* end = arr+N; // 1 next last element
+	// for (int* p = arr; p != arr+N; ++p)
+	for (int* p = begin; p != end; p = next(p))
 	{
 	       	cout <<*p <<" ";
 	}
 	cout <<endl <<endl;
 	} //////////////////////////// array block end
 
+
 	list* l1 = cons_many(NULL, N); // l1 초기화
 
 	{ /////////////////////////// list block begin
-	//// list* begin = l1;
-	//// list* end = NULL;
-	//// list* next(list* p) { return p->next; }
-	//// for (list* p = begin; p != end; p = next(p))
-	for (list* p = l1; p != NULL; p = p->next)
+	list* begin = l1;
+	list* end = NULL;
+	// for (list* p = l1; p != NULL; p = p->next)
+	for (list* p = begin; p != end; p = next(p))
        	{
 	       	cout <<p->data <<" ";
        	}
