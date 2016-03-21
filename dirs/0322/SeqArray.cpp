@@ -22,6 +22,7 @@ struct Sequence {
 			for(int* p=end(); p != ptr; --p) { *p = *(p-1); }
 			*ptr = data;
 			++length;
+			return ptr;
 		} else {
 		       	cerr <<"ERROR: insert failure - ";
 			cerr <<"Sequence already reached its maximun size " <<N;
@@ -36,11 +37,14 @@ struct Sequence {
 int main(void)
 {
 	Sequence seq = { 0 }; // legnth = 0 으로 초기화
+
 	seq.push_back(5);
 	seq.push_back(4);
 	seq.push_back(3);
 	seq.push_back(2);
 	seq.push_back(1);
+
+	seq.push_front(6);
 
 	cout <<"size: " <<seq.size() <<endl;
 	cout <<"contents: ";
