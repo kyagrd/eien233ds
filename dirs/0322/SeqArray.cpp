@@ -29,8 +29,17 @@ struct Sequence {
 			cerr <<endl;
 		}
 	}
-	int* push_front(int data) { insert( begin(), data ); }
-	int* push_back(int data) { insert( begin()+length, data ); }
+	int* insert_next(int* ptr, int data) {
+		if (ptr == end()) {
+			cerr <<"ERROR: insert_next failure - ";
+			cerr <<"pointer already at the end" <<endl;
+			return end();
+		}
+		
+		return insert(ptr+1, data);
+	}
+	int* push_front(int data) { return insert( begin(), data ); }
+	int* push_back(int data) { return insert( end(), data ); }
 };
 
 
