@@ -27,6 +27,7 @@ struct Sequence {
 		       	cerr <<"ERROR: insert failure - ";
 			cerr <<"Sequence already reached its maximun size " <<N;
 			cerr <<endl;
+			return ptr;
 		}
 	}
 	int* insert_next(int* ptr, int data) {

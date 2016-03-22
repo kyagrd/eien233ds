@@ -44,7 +44,7 @@ struct Sequence {
 		++length;
 		return l;
        	}
-	list* push_back(int data) { insert( end(), data ); }
+	list* push_back(int data) { return insert( end(), data ); }
 };
 
 
