@@ -33,7 +33,7 @@ Mac OS X 사용자는 XCode를 이용해도 무방하며
 * [2016-03-15 배열, 포인터, 동적할당, 귀납적 정의, 리스트, 트리](https://slides.com/kyagrd/ds2016spring0315) (수업시간에 다룬 [예제 소스코드](https://github.com/kyagrd/eien233ds/tree/master/dirs/0315) )
 * 2016-03-18: 과제에 대하 설명, 질문 답변 및 배열과 리스트 for문 돌리기 (수업시간에 다룬 [예제 소스코드](https://github.com/kyagrd/eien233ds/tree/master/dirs/0318) )
 * [2016-03-22 배열과 리스트 공통점과 차이점](https://slides.com/kyagrd/ds2016spring0322)
-* [2016-03-25 배열과 리스트 공통점과 차이점](https://slides.com/kyagrd/ds2016spring0325)
+* [2016-03-25 귀납적 정의와 재귀(순환, 되돌기)](https://slides.com/kyagrd/ds2016spring0325)
  
 
 ## C/C++ 프로그래밍 유투브 강좌 시리즈 (보충 참고자료)
