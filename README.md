@@ -34,7 +34,7 @@ Mac OS X 사용자는 XCode를 이용해도 무방하며
 * 2016-03-18: 과제에 대하 설명, 질문 답변 및 배열과 리스트 for문 돌리기 (수업시간에 다룬 [예제 소스코드](https://github.com/kyagrd/eien233ds/tree/master/dirs/0318) )
 * [2016-03-22 배열과 리스트 공통점과 차이점](https://slides.com/kyagrd/ds2016spring0322)
 * [2016-03-25 귀납적 정의와 재귀(순환, 되돌기)](https://slides.com/kyagrd/ds2016spring0325)
- 
+* [2016-03-29 과제1 풀이, 퀴즈2 풀이](http://slides.com/kyagrd/ds2016spring0329]
 
 ## C/C++ 프로그래밍 유투브 강좌 시리즈 (보충 참고자료)
 프로그래밍에 익숙한 정도가 개개인별로 달라서 너무 쉽다고 느끼는 분들이 있을수도
