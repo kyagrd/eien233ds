@@ -1,11 +1,13 @@
 /*
- * 과제3
- *  (1) list에 대한 copy를 재귀함수로 구현
- *  (2) 두 list를 연결한 새로운 리스트를 만드는 append 재귀함수 구현
- *  (3) tree를 list로 변환하는 함수 3가지 preorder, postorder, inorder 
- *      재귀함수로 구현
- * 제출기한: 2016년 4월12일 월요일 밤
- */
+* 과제3
+*  (1) list에 대한 copy를 재귀함수로 구현
+*  (2) 두 list를 연결한 새로운 리스트를 만드는
+*      append 재귀함수 구현
+*  (3) tree를 list로 변환하는 함수 3가지
+*      preorder, postorder, inorder
+*      재귀함수로 구현
+* 제출기한: 2016년 4월12일 월요일 밤
+*/
 
 #include "stdafx.h" // Visual C++에서 생성해주는 헤더
 
@@ -28,8 +30,8 @@ list* cons_many(list* l, int n)
 
 	// 참고로 시드값이 고정되면 항상 같은 순서로 값 생성
 	for (int i = 0; i < n; ++i)
-       	{
-		p = new list( { rand() % 10, p } );
+	{
+		p = new list({ rand() % 10, p });
 	}
 
 	return p;
@@ -41,15 +43,15 @@ tree* gen_tree(int h)
 
 	tree* lt = gen_tree(h - 1);
 	tree* rt = gen_tree(h - 1);
-	return new tree( { rand() % 100, lt, rt } );
+	return new tree({ rand() % 100, lt, rt });
 }
 
 void print_list(list* l) {
 	for (list* p = l; p != NULL; p = p->next)
-       	{
-	       	cout <<p->data <<" ";
-       	}
-	cout <<endl <<endl;
+	{
+		cout << p->data << " ";
+	}
+	cout << endl;
 }
 
 list* copy(list* l) {
@@ -58,7 +60,15 @@ list* copy(list* l) {
 	// 3-(1) 여기에 자신의 프로그램 작성
 	//
 	////////////////////////////////////////////
-	return NULL; // dummy return
+	if (l == NULL) {
+		return NULL;
+	}
+	else {
+		// 길이 1 이상인 리스트
+		list* p = copy(l->next); // 맨앞 뺀 나머지 복사
+		return new list({l->data, p});
+		// return new list({l->data,copy(l->next)});
+	}
 }
 
 list* append(list* l1, list* l2) {
@@ -103,44 +113,47 @@ int main(void)
 
 	list* l1 = cons_many(NULL, N); // l1를 초기화
 	list* l2 = cons_many(NULL, N); // l2를 초기화
-	cout<<"l1:" <<endl;
+	cout << "l1:" << endl;
 	print_list(l1);
-	cout<<"l2:" <<endl;
+	cout << "l2:" << endl;
 	print_list(l2);
-
+	cout << endl;
 	///////////////////////////////////////////////////
 
 	list* l1copy = copy(l1);
-	cout<<"l1:" <<endl;
+	cout << "l1:" << endl;
 	print_list(l1);
-	cout<<"l1copy:" <<endl;
+	cout << "l1copy:" << endl;
 	print_list(l1copy);
-
+	cout << endl;
 	///////////////////////////////////////////////////
 
-	list* l3 = append(l1,l2);
-	cout<<"l1:" <<endl;
+	list* l3 = append(l1, l2);
+	cout << "l1:" << endl;
 	print_list(l1);
-	cout<<"l2:" <<endl;
+	cout << "l2:" << endl;
 	print_list(l2);
-	cout<<"l3:" <<endl;
+	cout << "l3:" << endl;
 	print_list(l3);
-
+	cout << endl;
 	///////////////////////////////////////////////////
 
 	tree* t = gen_tree(H);
 
 	list* lpre = preorder(t);
-	cout<<"lpre:" <<endl;
+	cout << "lpre:" << endl;
 	print_list(lpre);
+	cout << endl;
 
 	list* lpost = postorder(t);
-	cout<<"lpost:" <<endl;
+	cout << "lpost:" << endl;
 	print_list(lpost);
+	cout << endl;
 
 	list* lin = inorder(t);
-	cout<<"lin:" <<endl;
+	cout << "lin:" << endl;
 	print_list(lin);
+	cout << endl;
 
 #ifdef _MSC_VER // 윈도우즈 명령창이 닫혀서 쓰는 꼼수
 	printf("\n\nPress Enter key to exit ...");
@@ -149,3 +162,4 @@ int main(void)
 
 	return 0;
 }
+
