@@ -38,6 +38,7 @@ Mac OS X 사용자는 XCode를 이용해도 무방하며
 * [2016-03-29 과제1 풀이, 퀴즈2 풀이](http://slides.com/kyagrd/ds2016spring0329)
 * 2016-04-01 list에 대한 포인터 2개로 만든 맨앞과 맨뒤 삽입 모두 O(1)인 추상 데이타 타입 List
   * List 예제 소스코드 http://ideone.com/8hsygE
+* 2016-04-05 [binomial coefficient 재귀함수](https://github.com/kyagrd/eien233ds/blob/master/dirs/0405/choose.cpp)
 * 2016-04-08 list로 만든 스택([소스코드](http://ideone.com/5FQ2y5))과 List로 만든 큐([소스코드](http://ideone.com/wTAb3T))
 * 2016-04-12 [과제2 관련 Destructive Update vs Persistent Data](https://slides.com/kyagrd/ds2016spring0412), 스택으로 괄호 매칭 검사 ([소스코드](https://github.com/kyagrd/eien233ds/blob/master/dirs/0412/parenmatch.cpp))
 
