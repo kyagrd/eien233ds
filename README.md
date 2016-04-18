@@ -41,6 +41,7 @@ Mac OS X 사용자는 XCode를 이용해도 무방하며
 * 2016-04-05 [binomial coefficient 재귀함수](https://github.com/kyagrd/eien233ds/blob/master/dirs/0405/choose.cpp)
 * 2016-04-08 list로 만든 스택([소스코드](http://ideone.com/5FQ2y5))과 List로 만든 큐([소스코드](http://ideone.com/wTAb3T))
 * 2016-04-12 [과제2 관련 Destructive Update vs Persistent Data](https://slides.com/kyagrd/ds2016spring0412), 스택으로 괄호 매칭 검사 ([소스코드](https://github.com/kyagrd/eien233ds/blob/master/dirs/0412/parenmatch.cpp))
+* 2016-04-19 [중간고사 안내, 이진 트리 관련 정의](https://slides.com/kyagrd/ds2016spring0419)
 
 ## C/C++ 프로그래밍 유투브 강좌 시리즈 (보충 참고자료)
 프로그래밍에 익숙한 정도가 개개인별로 달라서 너무 쉽다고 느끼는 분들이 있을수도
