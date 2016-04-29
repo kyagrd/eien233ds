@@ -1,7 +1,7 @@
 // ConsoleApplication1.cpp : 콘솔 응용 프로그램에 대한 진입점을 정의합니다.
 //
 
-#include "stdafx.h"
+//#include "stdafx.h"
 #include <limits.h>
 #include <iostream>
 using namespace std;
@@ -111,10 +111,7 @@ int isBST(tree* t) {
 		minBST(t->right) <= t->data)
 		return 0;
 
-	if (! isBST(t->left)) return 0;
-	if (! isBST(t->right)) return 0;
-
-	return 1;
+	return isBST(t->left) && isBST(t->right);
 }
 
 
@@ -144,8 +141,8 @@ int main()
 	}
 
 	tree *t5 = node(3, node(1, NULL, NULL),
-		               node(6, NULL, NULL));
-	tree *t6 = node(7, node(4, NULL, NULL),
+		               node(4, NULL, NULL));
+	tree *t6 = node(7, node(6, NULL, NULL),
 		               NULL);
 	tree* ttt = node(5, t5, t6);
 
@@ -159,4 +156,3 @@ int main()
 	getchar();
     return 0;
 }
-
