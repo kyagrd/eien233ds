@@ -94,16 +94,6 @@ int maxBST(tree* t) {
 int isBST(tree* t) {
 	if (t == NULL) return 1;
 
-	// 바로 아래 값들과만 비교하는 잘못된 구현
-	/*
-	if (t->left &&
-		t->left->data >= t->data)
-		return 0;
-	if (t->right &&
-		t->right->data <= t->data)
-		return 0;
-	*/
-
 	if (t->left &&
 		maxBST(t->left) >= t->data)
 		return 0;
