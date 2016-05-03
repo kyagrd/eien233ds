@@ -44,6 +44,7 @@ Mac OS X 사용자는 XCode를 이용해도 무방하며
 * 2016-04-19 [중간고사 안내, 이진 트리 관련 정의](https://slides.com/kyagrd/ds2016spring0419)
   * level order 와 minBST, maxBST, isBST [소스코드](https://github.com/kyagrd/eien233ds/blob/master/dirs/0419/LevelOrder_isBST.cpp)
 * [2016-05-03 이진트리 전에 했던거 복습 및 insert](https://slides.com/kyagrd/ds2016spring0503)
+
 ## C/C++ 프로그래밍 유투브 강좌 시리즈 (보충 참고자료)
 프로그래밍에 익숙한 정도가 개개인별로 달라서 너무 쉽다고 느끼는 분들이 있을수도
 있고 또 반대로 스스로 C/C++ 프로그래밍에 대한 기초가 부족하다고 느끼거나
