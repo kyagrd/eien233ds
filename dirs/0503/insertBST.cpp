@@ -52,14 +52,13 @@ void printBST(tree* t) {
 }
 
 int searchBST(int n, tree* t) {
-	if (t == NULL)
-		return 0; // 없다
-	else if (n < t->data)
-		searchBST(n, t->left);
-	else if (n > t->data)
-		searchBST(n, t->right);
-	else // if (n == t->data)
-		return 1; // 있다
+	if (t == NULL) return 0; // 없다
+
+	if (n < t->data) return searchBST(n, t->left);
+	if (n > t->data) return searchBST(n, t->right);
+
+	// if (n == t->data)
+	return 1; // 있다
 }
 
 tree* insertBST(int n, tree* t) {
@@ -117,15 +116,20 @@ int main()
 
 	// sharelatex 에 붙여넣을 수 있는 형태 출력
 	printBST(ttt);
+	cout << endl;
 
 	if (searchBST(4, ttt)) {
 		cout << "found 4 in ttt" << endl;
 	}
 
+	if (searchBST(2, ttt)) {
+		cout << "found 2 in ttt" << endl;
+	}
+
 	ttt = insertBST(2, ttt);
 
 	if (searchBST(2, ttt)) {
-		cout << "found 2 in ttt" << endl;
+		cout << "found 2 in ttt after insert" << endl;
 	}
 
 	// sharelatex 에 붙여넣을 수 있는 형태 출력
@@ -135,3 +139,4 @@ int main()
 	getchar();
 	return 0;
 }
+
