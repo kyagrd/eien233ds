@@ -2,7 +2,6 @@
 //
 
 #include "stdafx.h"
-#include <limits.h>
 #include <iostream>
 using namespace std;
 
@@ -97,18 +96,45 @@ tree* insertBST(entry* e, tree* t) {
 struct Map { // 학번을 이름에 대응
 	tree* t;
 	entry* find(int k) {
-		return searchBST(k);
+		return searchBST(k, t);
 	}
-	entry* update(int k, char* data);
+	entry* update(int k, char* data) {
+		entry* p = find(k);
+		if (p) p->value = data;
+		else {
+			p = new entry({k,data});
+			t = insertBST(p,t);
+		}
+		return p;
+	}
 	// entry* remove(int k);
 };
 
-// 아직 update 작업중
-
-int main(int argc, char **argv)
+int main(void)
 {
+	Map m = { NULL };
+	m.update(1998010101,"김동성");
+	m.update(2009000000,"김연아");
+	m.update(1972000111,"차범근");
+	m.update(1988000111,"서정원");
+	m.update(1999000111,"차두리");
+	m.update(2000999999,"이천수");
+	m.update(1990999999,"김수녕");
+	
+	entry* p1 = m.find(2009000000);
+	if (p1) cout <<p1->value <<endl;
+	else cout <<2009000000 <<" not found" <<endl;
+
+	entry* p2 = m.find(2007010101);
+	if (p2) cout <<p2->value <<endl;
+	else cout <<2007010101 <<" not found" <<endl;
+
+	m.update(2007010101,"김자인");
+
+	entry* p3 = m.find(2007010101);
+	if (p3) cout <<p3->value <<endl;
+	else cout <<2007010101 <<" not found" <<endl;
+
 	getchar();
-	return 0;
+    return 0;
 }
-
-
