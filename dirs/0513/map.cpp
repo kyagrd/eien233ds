@@ -8,6 +8,9 @@ using namespace std;
 struct entry {
 	int key; // 학번
 	char* value; // 이름
+	// (2)번 - 추가하면 Map에 update도 바꾸기
+	// int gender; // 성별
+	       // 여자:0, 남자:1
 };
 
 struct tree { entry* data; tree* left; tree* right; };
@@ -45,14 +48,14 @@ int isBST(tree* t) {
 }
 /*
 void printBST(tree* t) {
-	if (t == NULL) { cout << "{}"; }
-	else {
-		cout << t->data << " -> { ";
-		printBST(t->left);
-		cout << ", ";
-		printBST(t->right);
-		cout << "}";
-	}
+if (t == NULL) { cout << "{}"; }
+else {
+cout << t->data << " -> { ";
+printBST(t->left);
+cout << ", ";
+printBST(t->right);
+cout << "}";
+}
 }
 */
 entry* searchBST(int n, tree* t) {
@@ -68,7 +71,7 @@ entry* searchBST(int n, tree* t) {
 }
 
 tree* insertBST(entry* e, tree* t) {
-	if (t == NULL) return node(e,NULL,NULL);
+	if (t == NULL) return node(e, NULL, NULL);
 
 	if (e->key < t->data->key) {
 		if (t->left == NULL)
@@ -98,43 +101,53 @@ struct Map { // 학번을 이름에 대응
 	entry* find(int k) {
 		return searchBST(k, t);
 	}
-	entry* update(int k, char* data) {
+	entry* update(int k, char* v) {
 		entry* p = find(k);
-		if (p) p->value = data;
+		if (p) p->value = v;
 		else {
-			p = new entry({k,data});
-			t = insertBST(p,t);
+			p = new entry({k,v});
+			t = insertBST(p, t);
 		}
 		return p;
 	}
+	// (1)번
 	// entry* remove(int k);
+	// 실제로 트리에서 존재하는
+	// 엔트리이면 그걸 리턴하고, 만약에
+	// k라는 키가 없으면 NULL을 리턴
 };
 
 int main(void)
 {
 	Map m = { NULL };
-	m.update(1998010101,"김동성");
-	m.update(2009000000,"김연아");
-	m.update(1972000111,"차범근");
-	m.update(1988000111,"서정원");
-	m.update(1999000111,"차두리");
-	m.update(2000999999,"이천수");
-	m.update(1990999999,"김수녕");
-	
+	m.update(1998010101, "김동성");
+	m.update(2009000000, "김연아");
+	m.update(1972000111, "차범근");
+	m.update(1988000111, "서정원");
+	m.update(1999000111, "차두리");
+	m.update(2000999999, "이천수");
+	m.update(1990999999, "김수녕");
+
 	entry* p1 = m.find(2009000000);
-	if (p1) cout <<p1->value <<endl;
-	else cout <<2009000000 <<" not found" <<endl;
+	if (p1) cout << p1->value << endl;
+	else cout << 2009000000 << " not found" << endl;
 
 	entry* p2 = m.find(2007010101);
-	if (p2) cout <<p2->value <<endl;
-	else cout <<2007010101 <<" not found" <<endl;
+	if (p2) cout << p2->value << endl;
+	else cout << 2007010101 << " not found" << endl;
 
-	m.update(2007010101,"김자인");
+	m.update(2007010101, "김자연");
 
 	entry* p3 = m.find(2007010101);
-	if (p3) cout <<p3->value <<endl;
-	else cout <<2007010101 <<" not found" <<endl;
+	if (p3) cout << p3->value << endl;
+	else cout << 2007010101 << " not found" << endl;
+
+	m.update(2007010101, "김자인");
+
+	entry* p4 = m.find(2007010101);
+	if (p4) cout << p4->value << endl;
+	else cout << 2007010101 << " not found" << endl;
 
 	getchar();
-    return 0;
+	return 0;
 }
