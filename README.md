@@ -24,6 +24,10 @@ Mac OS X 사용자는 XCode를 이용해도 무방하며
 * 과제1 (제출기한: 2016-03-21 월요일 밤) - 다음 프로그램을 완성하시오 [hw1.cpp](https://github.com/kyagrd/eien233ds/blob/master/dirs/hw1/hw1.cpp) 
 * 과제2 (제출기한: 2016-03-28 월요일 밤) - 다음 프로그램을 완성하시오 [hw2.cpp](https://github.com/kyagrd/eien233ds/blob/master/dirs/hw2/hw2.cpp)
 * 과제3 (제출기한: 2016-04-11 월요일 밤) - 다음 프로그램을 완성하시오 [hw3.cpp](https://github.com/kyagrd/eien233ds/blob/master/dirs/hw3/hw3.cpp)
+* 과제4 (제출기한: 2016-05-23 월요일 밤)
+  [map.cpp](https://github.com/kyagrd/eien233ds/blob/master/dirs/0513/map.cpp)에서
+  * (1) Map에 remove 함수를 완성하기
+  * (2) entry에 int gender (성별, 여자는 0 남자는 1) 추가하고 Map의 update 함수도 그에 맞게 바꾸기
 
 ## 강의노트
 강의 전후로 업데이트 예정
