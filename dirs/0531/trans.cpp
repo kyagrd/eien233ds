@@ -236,7 +236,6 @@ int main()
 	cout << "Printing E1" << endl;
 	for (list* p = e1.to_list(); p; p = p->next) {
 		cout << "(" << p->data.x
-
 			<< "," << p->data.y << ") ";
 	}
 	cout << endl;
@@ -265,7 +264,6 @@ int main()
 	cout << "Printing E2" << endl;
 	for (list* p = e2.to_list(); p; p = p->next) {
 		cout << "(" << p->data.x
-
 			<< "," << p->data.y << ") ";
 	}
 	cout << endl;
@@ -297,7 +295,6 @@ int main()
 	cout << "Printing E3" << endl;
 	for (list* p = e3.to_list(); p; p = p->next) {
 		cout << "(" << p->data.x
-
 			<< "," << p->data.y << ") ";
 	}
 	cout << endl;
