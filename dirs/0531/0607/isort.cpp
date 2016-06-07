@@ -32,6 +32,6 @@ int main()
 	for (int i = 0; i < N; ++i)
 		printf("%d ", a[i]);
 	getchar();
-  return 0;
+	return 0;
 }
 
