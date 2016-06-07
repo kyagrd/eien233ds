@@ -52,7 +52,11 @@ Mac OS X 사용자는 XCode를 이용해도 무방하며
 * 2016-05-10 이진트리 searchBST를 재귀함수가 아닌 반복문으로 구현, deleteBST 함수 작성, Set 추상 데이타 타입을 BST로 구현
   * [소스코드](https://github.com/kyagrd/eien233ds/blob/master/dirs/0510/setWithBST.cpp)
 * 2016-05-24 인접 리스트 표현 그래프에 대한 DFS와 BFS [소스코드](https://github.com/kyagrd/eien233ds/tree/master/dirs/0524)
-* 2016-05-31 Transitive Closure (이형적 폐쇄, 이적 폐쇄) [소스크드](https://github.com/kyagrd/eien233ds/blob/master/dirs/0531/trans.cpp)
+* 2016-05-31 Transitive Closure (이형적 폐쇄, 이적 폐쇄) [소스코드](https://github.com/kyagrd/eien233ds/blob/master/dirs/0531/trans.cpp)
+* 2016-06-07
+   * Transitve Closure의 구하는 위 프로그램에서 Set 추상 데이타 타입 대신 Map으로 활용해 모든 점에서 모든 점까지 최단경로 비용을 구하는 [소스코드](https://github.com/kyagrd/eien233ds/blob/master/dirs/0531/0607/isort.cpp)
+   * 삽입정렬 [소스코드](https://github.com/kyagrd/eien233ds/blob/master/dirs/0531/0607/isort.cpp)
+
 
 ## C/C++ 프로그래밍 유투브 강좌 시리즈 (보충 참고자료)
 프로그래밍에 익숙한 정도가 개개인별로 달라서 너무 쉽다고 느끼는 분들이 있을수도
