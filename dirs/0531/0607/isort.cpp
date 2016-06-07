@@ -9,8 +9,7 @@
 void insert(int k, int a[], int n) {
 	int i;
 	for (i = 0; i < n-1; ++i) {
-		if (k > a[i]) continue;
-		break;
+		if (k <= a[i]) break;
 	}
 	for (int j = n-1; j > i; --j) {
 		a[j] = a[j - 1];
