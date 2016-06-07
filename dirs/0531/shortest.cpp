@@ -3,6 +3,8 @@
 #include <iostream>
 using namespace std;
 
+int min(int x, int y) { return (x < y)? x : y; }
+
 struct edge { int x; int y; };
 // 크기비교 x를 우선 비교하고 같은 경우는 y를 비교
 bool operator == (edge e1, edge e2) {
