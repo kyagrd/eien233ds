@@ -1,12 +1,20 @@
 // insertion sort
 
 #include "stdafx.h"
+#include <iostream>
+using namespace std;
 // const int N = 10;
 
 #define N 10
 
 // k를 a에 삽입
 void insert(int k, int a[], int n) {
+	for (int i=n-1; i>=0; --i) {
+		if (i==0) { a[0] = k; break; }
+		else if (a[i-1] <= k) { a[i] = k; break; }
+		else { a[i] = a[i-1]; }
+	}
+	/*
 	int i;
 	for (i = 0; i < n-1; ++i) {
 		if (k <= a[i]) break;
@@ -15,6 +23,7 @@ void insert(int k, int a[], int n) {
 		a[j] = a[j - 1];
 	}
 	a[i] = k;
+	*/
 }
 
 void isort(int a[], int n) {
