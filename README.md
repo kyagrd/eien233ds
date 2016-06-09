@@ -56,7 +56,11 @@ Mac OS X 사용자는 XCode를 이용해도 무방하며
 * 2016-06-07
    * Transitve Closure의 구하는 위 프로그램에서 Set 추상 데이타 타입 대신 Map으로 활용해 모든 점에서 모든 점까지 최단경로 비용을 구하는 [소스코드](https://github.com/kyagrd/eien233ds/blob/master/dirs/0531/shortest.cpp)
    * 삽입정렬 [소스코드](https://github.com/kyagrd/eien233ds/blob/master/dirs/0607/isort.cpp)
-
+* 2016-06-10
+   * top-down 삽입정렬 [소스코드](https://github.com/kyagrd/eien233ds/blob/master/dirs/0607/isort.cpp)
+   * bottom-up 합병정렬:
+   [리스트 두 벌로 구현한 소스코드](https://github.com/kyagrd/eien233ds/blob/master/dirs/0607/msort2.cpp)
+   [C++ 템플릿으로 구현한 소스코드](https://github.com/kyagrd/eien233ds/blob/master/dirs/0607/msort.cpp)
 
 ## C/C++ 프로그래밍 유투브 강좌 시리즈 (보충 참고자료)
 프로그래밍에 익숙한 정도가 개개인별로 달라서 너무 쉽다고 느끼는 분들이 있을수도
