@@ -59,8 +59,8 @@ Mac OS X 사용자는 XCode를 이용해도 무방하며
 * 2016-06-10
    * top-down 삽입정렬 [소스코드](https://github.com/kyagrd/eien233ds/blob/master/dirs/0607/isort.cpp)
    * bottom-up 합병정렬:
-   [리스트 두 벌로 구현한 소스코드](https://github.com/kyagrd/eien233ds/blob/master/dirs/0607/msort2.cpp)
-   [C++ 템플릿으로 구현한 소스코드](https://github.com/kyagrd/eien233ds/blob/master/dirs/0607/msort.cpp)
+     * [리스트 두 벌로 구현한 소스코드](https://github.com/kyagrd/eien233ds/blob/master/dirs/0607/msort2.cpp)
+     * [C++ 템플릿으로 구현한 소스코드](https://github.com/kyagrd/eien233ds/blob/master/dirs/0607/msort.cpp)
 
 ## C/C++ 프로그래밍 유투브 강좌 시리즈 (보충 참고자료)
 프로그래밍에 익숙한 정도가 개개인별로 달라서 너무 쉽다고 느끼는 분들이 있을수도
